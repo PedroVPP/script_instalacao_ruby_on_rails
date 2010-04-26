@@ -1,3 +1,5 @@
 == Info
 
-Script de instalação do ruby on rails
+Script de instalação do ruby on rails.
+
+Para executar deve ser feito um "sudo chmod a+x script-instalacao-ruby-on-rails" para tornar o arquivo executável.
