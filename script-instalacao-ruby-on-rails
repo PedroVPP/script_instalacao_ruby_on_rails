@@ -1,0 +1,29 @@
+#!/bin/sh 
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+sudo apt-get install build-essential
+
+sudo apt-get install ruby ri rdoc mysql-server libmysql-ruby ruby1.8-dev irb1.8 libdbd-mysql-perl libdbi-perl libmysql-ruby1.8 libmysqlclient15off libnet-daemon-perl libplrpc-perl libreadline-ruby1.8 libruby1.8 mysql-client-5.1 mysql-common mysql-server-5.1 rdoc1.8 ri1.8 ruby1.8 irb libopenssl-ruby libopenssl-ruby1.8 libhtml-template-perl mysql-server-core-5.1 libmysqlclient16 libreadline5 psmisc
+
+wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
+tar xvzf rubygems-1.3.5.tgz
+cd rubygems-1.3.5
+sudo ruby setup.rb
+
+cd ..
+
+rm -rf rubygems-1.3.5.tgz rubygems-1.3.5/
+
+sudo ln -s /usr/bin/gem1.8 /usr/local/bin/gem
+sudo ln -s /usr/bin/ruby1.8 /usr/local/bin/ruby
+sudo ln -s /usr/bin/rdoc1.8 /usr/local/bin/rdoc
+sudo ln -s /usr/bin/ri1.8 /usr/local/bin/ri
+sudo ln -s /usr/bin/irb1.8 /usr/local/bin/irb
+
+sudo gem install rails
+
+
+
+
